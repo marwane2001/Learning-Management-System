@@ -1,0 +1,10 @@
+.env
+venv
+.DS_Store
+*.log
+*.pid
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.sqlite3-journal
