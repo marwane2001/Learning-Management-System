@@ -1,10 +1,77 @@
-.env
-venv
-.DS_Store
-*.log
-*.pid
-*.pyc
-*.pyo
-*.pyd
+# Byte-compiled / optimized / DLL files
 __pycache__/
-*.sqlite3-journal
+*.py[cod]
+*$py.class
+
+# Virtual environment directories
+.env/
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# PyCharm specific files
+.idea/
+*.iml
+*.iws
+
+# Django migrations
+**/migrations/*
+!**/migrations/__init__.py
+
+# Logs
+*.log
+
+# OS-generated files and folders
+.DS_Store
+Thumbs.db
+
+# Local database files
+*.sqlite3
+
+# Media folder (example - adjust as needed)
+media/
+media/*
+
+# Static files (build artifacts)
+static/
+staticfiles/
+*.sass-cache/
+
+# Python egg files
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Test result files
+coverage.xml
+*.cover
+htmlcov/
+.tox/
+.nox/
+.cache/
+.pytest_cache/
+nosetests.xml
+coverage/
+*.coveragerc
+*.coverage
+*.pytest_cache/
+
+# Custom Config files (e.g. IDE settings)
+*.swp
+*.swo
+*.idea/
+.idea_modules/
+
+# Ignore .env for security (environment variables)
+.env
+.env.*
+
+# Ignore Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+/*.pyc  # Avoid Temporary Bytecompiled
