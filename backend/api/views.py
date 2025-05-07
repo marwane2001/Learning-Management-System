@@ -1,13 +1,15 @@
 from django.shortcuts import render
 from requests import Response
-
+from django.core.mail import EmailMultiAlternatives
 from api import serializer as api_serializer
 from userauths.models import User, Profile
 import random
+from django.conf import settings
 from rest_framework_simplejwt.views import TokenObtainPairView
 from rest_framework import generics
 from rest_framework.permissions import AllowAny
 from rest_framework_simplejwt.tokens import RefreshToken
+from django.template.loader import render_to_string
 
 class MyTokenObtainPairView(TokenObtainPairView):
     serializer_class = api_serializer.MyTokenObtainPairSerializer
@@ -40,6 +42,27 @@ class PasswordResetEmailVerifyAPIView(generics.RetrieveAPIView):
             user.save()
 
             link = f"http://localhost:5173/create-new-password/?otp={user.otp}&uuidb64={uuidb64}&=refresh_token={refresh_token})"
+
+            merge_data={
+                "link":link,
+                "username":user.username,
+            }
+
+            subject = "Password Reset Request"
+            text_body = render_to_string("email/password_reset.txt", merge_data)
+            html_body = render_to_string("email/password_reset.html", merge_data)
+            msg = EmailMultiAlternatives(
+                subject=subject,
+                from_email=settings.FROM_EMAIL,
+                to=[user.email],
+                body=text_body
+            )
+
+            msg.attach_alternative(html_body, "text/html")
+            msg.send()
+
+            msg = EmailMultiAlternatives(subject=subject, from_email=marwane.skaro@e-polytechnique.ma)
+
             print("link =====", link)
 
             return user
