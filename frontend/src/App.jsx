@@ -4,6 +4,8 @@ import MainWrapper from "./layouts/MainWrapper";
 import Register from "./views/auth/Register";
 import Login from "./views/auth/Login";
 import Logout from "./views/auth/Logout";
+import ForgotPassword from "./views/auth/ForgotPassword.jsx";
+import CreateNewPassword from "./views/auth/CreateNewPassword.jsx";
 import { CartContext } from "./views/plugin/Context";
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
             <Route path="/register/" element={<Register />} />
               <Route path="/login/" element={<Login />} />
               <Route path="/logout/" element={<Logout />} />
+              <Route path="/forgot-password/" element={<ForgotPassword />} />
+              <Route path="/create-new-password/" element={<CreateNewPassword />} />
           </Routes>
         </MainWrapper>
       </BrowserRouter>
