@@ -3,7 +3,6 @@ import { Link, useNavigate } from "react-router-dom";
 import { CartContext } from "../plugin/Context";
 import { useAuthStore } from "../../store/auth";
 
-
 function BaseHeader() {
     const [cartCount, setCartCount] = useContext(CartContext);
     const [searchQuery, setSearchQuery] = useState("");
@@ -20,7 +19,7 @@ function BaseHeader() {
             <nav className="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
                 <div className="container">
                     <Link className="navbar-brand" to="/">
-                        BYTEBUILD
+                        ByteBuild
                     </Link>
                     <button
                         className="navbar-toggler"
@@ -36,16 +35,9 @@ function BaseHeader() {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <Link className="nav-link" to="/pages/contact-us/">
-                                    {" "}
-                                    <i className="fas fa-phone"></i> Contact Us
-                                </Link>
+
                             </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" to="/pages/about-us/">
-                                    <i className="fas fa-address-card"></i> About Us
-                                </Link>
-                            </li>
+
                             <li className="nav-item dropdown">
                                 <a
                                     className="nav-link dropdown-toggle"

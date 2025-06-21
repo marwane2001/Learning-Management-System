@@ -11,7 +11,7 @@ function BaseFooter() {
               <h1>ByteBuild</h1>
               <div className="mt-4">
                 <p>
-                  Bytebuild is feature-rich components and beautifully Bootstrap UIKit
+                  ByteBuild is feature-rich components and beautifully Bootstrap UIKit
                   for developers, built with bootstrap responsive framework.
                 </p>
                 {/* social media */}
@@ -129,14 +129,14 @@ function BaseFooter() {
             {/* contact info */}
             <div className="mb-4">
               <h3 className="fw-bold mb-3">Get in touch</h3>
-              <p>123 Main Street, U.S.A</p>
+              <p>Agadir, Technopark, 2nd floor, TA212</p>
               <p className="mb-1">
                 Email:
-                <a href="#" className='text-white'> support@ByteBuild.com</a>
+                <a href="#" className='text-white'> support@marwane.skaro@e-polytechnique.ma</a>
               </p>
               <p>
                 Phone:
-                <span className="text-dark fw-semibold">(000) 123 456 789</span>
+                <span className="text-white fw-semibold"> +212-622-117-014</span>
               </p>
               <div className="d-flex">
                 <a href="#">

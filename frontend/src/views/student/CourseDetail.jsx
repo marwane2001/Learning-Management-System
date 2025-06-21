@@ -826,7 +826,7 @@ function CourseDetail() {
                                             className="form-select js-choice"
                                             onChange={handleReviewChange}
                                             name="rating"
-                                            value={course.review.rating}
+                                            // value={course.review.rating}
                                           >
                                             <option value={1}>
                                               ★☆☆☆☆ (1/5)

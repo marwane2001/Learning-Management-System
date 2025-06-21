@@ -149,9 +149,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
-STATIC_FILES_DIR=[os.path.join(BASE_DIR,"static")]
-STATIC_ROOT= BASE_DIR/'templates'
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 MEDIA_URL='/media/' #localhost/media/x.jpg
 MEDIA_ROOT=BASE_DIR/'media'
 AUTH_USER_MODEL='userauths.User'
@@ -165,7 +165,7 @@ JAZZMIN_SETTINGS = {
     "site_title": "ByteBuild Admin",
     "site_header": "ByteBuild",
     "site_brand": "ByteBuild",
-    "site_logo": "books/img/logo.png",
+    "site_logo": "img/logo.png",
     "login_logo": None,
     "login_logo_dark": None,
     "site_logo_classes": "img-circle",
@@ -227,7 +227,7 @@ JAZZMIN_SETTINGS = {
     "site_title": "ByteBuild Admin",
     "site_header": "ByteBuild",
     "site_brand": "ByteBuild",
-    "site_logo": "books/img/logo.png",
+    "site_logo": "/img/logo.png",
     "login_logo": None,
     "login_logo_dark": None,
     "site_logo_classes": "img-circle",

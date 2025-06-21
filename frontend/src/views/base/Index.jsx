@@ -1,5 +1,3 @@
-
-
 import { useEffect, useState, useContext } from "react";
 import BaseHeader from "../partials/BaseHeader";
 import BaseFooter from "../partials/BaseFooter";
@@ -132,7 +130,7 @@ function Index() {
                   Join Free Now <i className="fas fa-plus"></i>
                 </a>
                 <a
-                  href="https://www.youtube.com/watch?v=Nfzi7034Kbg"
+                  href="#"
                   className="btn btn-outline-success fs-4 text-inherit ms-3"
                 >
                   Watch Demo <i className="fas fa-video"></i>
@@ -143,75 +141,76 @@ function Index() {
             <div className="col-lg-6 d-flex justify-content-center">
               {/* images */}
               <div className="position-relative">
-                <img
-                  src="https://geeksui.codescandy.com/geeks/assets/images/background/acedamy-img/girl-image.png"
-                  alt="girl"
-                  className="end-0 bottom-0"
-                />
+               <img
+  src="https://www.fastweb.com/uploads/article_photo/photo/2036641/10-ways-to-be-a-better-student.jpeg"
+  alt="student"
+  style={{ width: "660px", height: "auto" }}
+/>
+
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="pb-8">
-        <div className="container mb-lg-8">
-          {/* row */}
-          <div className="row mb-5">
-            <div className="col-md-6 col-lg-3 border-top-md border-top pb-4  border-end-md">
-              {/* text */}
-              <div className="py-7 text-center">
-                <div className="mb-3">
-                  <i className="fe fe-award fs-2 text-info" />
-                </div>
-                <div className="lh-1">
-                  <h2 className="mb-1">316,000+</h2>
-                  <span>Qualified Instructor</span>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 col-lg-3 border-top-md border-top border-end-lg">
-              {/* icon */}
-              <div className="py-7 text-center">
-                <div className="mb-3">
-                  <i className="fe fe-users fs-2 text-warning" />
-                </div>
-                {/* text */}
-                <div className="lh-1">
-                  <h2 className="mb-1">1.8 Billion+</h2>
-                  <span>Course enrolments</span>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 col-lg-3 border-top-lg border-top border-end-md">
-              {/* icon */}
-              <div className="py-7 text-center">
-                <div className="mb-3">
-                  <i className="fe fe-tv fs-2 text-primary" />
-                </div>
-                {/* text */}
-                <div className="lh-1">
-                  <h2 className="mb-1">41,000+</h2>
-                  <span>Courses in 42 languages</span>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 col-lg-3 border-top-lg border-top">
-              {/* icon */}
-              <div className="py-7 text-center">
-                <div className="mb-3">
-                  <i className="fe fe-film fs-2 text-success" />
-                </div>
-                {/* text */}
-                <div className="lh-1">
-                  <h2 className="mb-1">179,000+</h2>
-                  <span>Online Videos</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/*<section className="pb-8">*/}
+      {/*  <div className="container mb-lg-8">*/}
+      {/*    /!* row *!/*/}
+      {/*    <div className="row mb-5">*/}
+      {/*      <div className="col-md-6 col-lg-3 border-top-md border-top pb-4  border-end-md">*/}
+      {/*        /!* text *!/*/}
+      {/*        <div className="py-7 text-center">*/}
+      {/*          <div className="mb-3">*/}
+      {/*            <i className="fe fe-award fs-2 text-info" />*/}
+      {/*          </div>*/}
+      {/*          <div className="lh-1">*/}
+      {/*            <h2 className="mb-1">316,000+</h2>*/}
+      {/*            <span>Qualified Instructor</span>*/}
+      {/*          </div>*/}
+      {/*        </div>*/}
+      {/*      </div>*/}
+      {/*      <div className="col-md-6 col-lg-3 border-top-md border-top border-end-lg">*/}
+      {/*        /!* icon *!/*/}
+      {/*        <div className="py-7 text-center">*/}
+      {/*          <div className="mb-3">*/}
+      {/*            <i className="fe fe-users fs-2 text-warning" />*/}
+      {/*          </div>*/}
+      {/*          /!* text *!/*/}
+      {/*          <div className="lh-1">*/}
+      {/*            <h2 className="mb-1">1.8 Billion+</h2>*/}
+      {/*            <span>Course enrolments</span>*/}
+      {/*          </div>*/}
+      {/*        </div>*/}
+      {/*      </div>*/}
+      {/*      <div className="col-md-6 col-lg-3 border-top-lg border-top border-end-md">*/}
+      {/*        /!* icon *!/*/}
+      {/*        <div className="py-7 text-center">*/}
+      {/*          <div className="mb-3">*/}
+      {/*            <i className="fe fe-tv fs-2 text-primary" />*/}
+      {/*          </div>*/}
+      {/*          /!* text *!/*/}
+      {/*          <div className="lh-1">*/}
+      {/*            <h2 className="mb-1">41,000+</h2>*/}
+      {/*            <span>Courses in 42 languages</span>*/}
+      {/*          </div>*/}
+      {/*        </div>*/}
+      {/*      </div>*/}
+      {/*      <div className="col-md-6 col-lg-3 border-top-lg border-top">*/}
+      {/*        /!* icon *!/*/}
+      {/*        <div className="py-7 text-center">*/}
+      {/*          <div className="mb-3">*/}
+      {/*            <i className="fe fe-film fs-2 text-success" />*/}
+      {/*          </div>*/}
+      {/*          /!* text *!/*/}
+      {/*          <div className="lh-1">*/}
+      {/*            <h2 className="mb-1">179,000+</h2>*/}
+      {/*            <span>Online Videos</span>*/}
+      {/*          </div>*/}
+      {/*        </div>*/}
+      {/*      </div>*/}
+      {/*    </div>*/}
+      {/*  </div>*/}
+      {/*</section>*/}
 
       <section className="mb-5">
         <div className="container mb-lg-8 ">
@@ -222,7 +221,7 @@ function Index() {
                 <h2 className="mb-1 h1">🔥Most Popular Courses</h2>
                 <p>
                   These are the most popular courses among Geeks Courses
-                  learners worldwide in year 2022
+                  learners worldwide in year 2025
                 </p>
               </div>
             </div>
@@ -376,15 +375,15 @@ function Index() {
           {/* row */}
           <div className="row align-items-center bg-primary gx-0 rounded-3 mt-5">
             {/* col */}
-            <div className="col-lg-6 col-12 d-none d-lg-block">
-              <div className="d-flex justify-content-center pt-4">
+            <div className="col-lg-5 col-12 d-none d-lg-block">
+              <div className="d-flex  ">
                 {/* img */}
                 <div className="position-relative">
                   <img
-                    src="https://geeksui.codescandy.com/geeks/assets/images/png/cta-instructor-1.png"
-                    alt="image"
-                    className="img-fluid mt-n8"
-                  />
+                    src="https://img.freepik.com/photos-gratuite/coup-moyen-smiley-femme-enseignant_23-2149272223.jpg"
+                    alt="student"
+                    style={{ width: "500px", height: "auto" }}
+                      />
                   <div className="ms-n8 position-absolute bottom-0 start-0 mb-6">
                     <img
                       src="https://geeksui.codescandy.com/geeks/assets/images/svg/dollor.svg"
@@ -393,10 +392,7 @@ function Index() {
                   </div>
                   {/* img */}
                   <div className="me-n4 position-absolute top-0 end-0">
-                    <img
-                      src="https://geeksui.codescandy.com/geeks/assets/images/svg/graph.svg"
-                      alt="graph"
-                    />
+
                   </div>
                 </div>
               </div>
@@ -479,7 +475,7 @@ function Index() {
                           <div className="card-body text-center p-6">
                             {/* img */}
                             <img
-                              src="../../assets/images/avatar/avatar-1.jpg"
+                              src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=300&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                               alt="avatar"
                               className="avatar avatar-lg rounded-circle"
                             />
@@ -558,7 +554,7 @@ function Index() {
                           <div className="card-body text-center p-6">
                             {/* img */}
                             <img
-                              src="../../assets/images/avatar/avatar-1.jpg"
+                              src="https://images.unsplash.com/photo-1618535263244-0185e50e667e?q=80&w=300&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fHw%3D"
                               alt="avatar"
                               className="avatar avatar-lg rounded-circle"
                             />
@@ -637,7 +633,7 @@ function Index() {
                           <div className="card-body text-center p-6">
                             {/* img */}
                             <img
-                              src="../../assets/images/avatar/avatar-1.jpg"
+                              src="https://images.unsplash.com/photo-1616434116710-c45ce99c1a77?q=80&w=300&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                               alt="avatar"
                               className="avatar avatar-lg rounded-circle"
                             />
@@ -704,8 +700,8 @@ function Index() {
                               <span className="text-warning">5</span>
                               {/* text */}
                             </div>
-                            <h3 className="mb-0 h4">Gladys Colbert</h3>
-                            <span>Software Engineer at Palantir</span>
+                            <h3 className="mb-0 h4">Gilbert Abdul</h3>
+                            <span>Software Engineer </span>
                           </div>
                         </div>
                       </div>
